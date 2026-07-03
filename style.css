@@ -1,195 +1,394 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: black;
-    color: white;
 }
-.main{
-        background-image: url(needed_photo/item1_files/BD-en-20250519-TRIFECTA-perspective_86fac4d6-3797-4442-bc43-fb8d166657d2_large.jpg);
-        background-position: center center;
-        background-size: max(1500px, 100vw);
-        background-repeat: no-repeat;
-        height: 100vh;
-        position: relative;
-        overflow: hidden;
+
+.bg {
+
+    background-image: url(netflix/bg.jpg);
+    background-position: center center;
+    background-size: max(1500px, 100vw);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
 }
-.bg{
+
+.op {
+    height: 100vh;
     width: 100%;
-    height: 100%;
     background-color: black;
-    opacity: 0.80;
+    opacity: 0.70;
     position: absolute;
-    top: 0px;
+    top: 0;
 }
-.main .navigation{
-    width: 60vw;
-    margin: auto;
+
+nav {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    position: relative;
-    z-index: 10;
     align-items: center;
+    max-width: 60vw;
+    margin: auto;
+    height: 70px;
 }
-.bt button{
-    background-color: red;
-    color: white;
-    border: none;
-    padding:3px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 3px;
-}
-.container{
+
+nav img {
+    /* color: red; */
+    width: 154px;
     position: relative;
-    display: flex;
     z-index: 10;
-    width: 100vw;
-    height: 60%;
-    padding: 0;
-    margin: 0;
+}
+
+nav button {
+    color: white;
+    background-color: red;
+    position: relative;
+    z-index: 10;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content {
+    color: white;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    box-sizing: border-box;
     align-items: center;
+    height: calc(100% - 70px);
+    position: relative;
+    padding: 0 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.item1{
-    color: white;
-    font-weight: 1000;
-    font-size: 60px;
+
+.item1 {
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
 }
-.item2{
-    color: white;
-    font-weight: 1000;
-    font-size: 60px;
-    margin-bottom: 8px;
+
+.item2 {
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
 }
-.item3{
-    color: white;
-    margin-bottom: 13px;
-}
-.item4{
-    display: flex;
-}
-.item4 button{
-    color: white;
+
+.item3 {
     font-size: 20px;
-    font-weight: 500;
+    text-align: center;
+    font-weight: 400;
+    margin: 14px;
+}
+
+.item4 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.input {
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+}
+
+.input div {
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.input input {
+    font-size: 16px;
+    padding: 15px;
+    width: 400px;
+    border: 0.1px solid rgb(255, 255, 255);
+    background: none;
+    color: white;
+    margin: 1px 0;
+    border-radius: 5px;
+}
+
+.input button {
+    text-align: center;
+    padding: 0px 22px;
+    font-size: 20px;
+    height: 50px;
+    margin-left: 8px;
+    font-weight: bolder;
+    color: white;
     background-color: red;
-    padding: 13px;
-    margin-top: 5px;
     border: none;
+    margin-top: 2px;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 2px;
 }
-.item4 input{
-    font-size: 16px;
-    width: 400px;
-    color: white;
-    padding: 13px;
-    border-width: 0.1px;
-    border-style: solid;
-    border-color: rgb(255, 255, 255);
-    border-image: initial;
-    background: none;
-    margin: 1px 0px;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-.line{
+
+.sp {
     height: 8px;
-    background-color: grey;
-    margin-bottom: 30px;
+    background-color: gray;
 }
-.content{
+
+.container {
     width: 80vw;
+    margin: auto;
     color: white;
+    margin-top: 50px;
     font-size: 23px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
     overflow-x: hidden;
-    /* position: relative; */
-    margin: 50px auto auto;
+    position: relative;
 }
-.con1{
+
+.container span {
     margin-bottom: 30px;
 }
-.s{
-    width: 100%;
+
+.s {
+    width: 95%;
+    margin: auto;
+}
+
+.scrol {
+    width: 95%;
     margin: auto;
     display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-}
-.scrol{
-    display: flex;
-    width: 85%;
     overflow-x: auto;
-    overflow-y: hidden;
     scrollbar-width: none;
     gap: 13px;
-    margin: 30px auto auto;
+    margin-top: 30px;
+
 }
-.scrol img{
-    width: 170px;
-    height: 250px;
+
+.scrol img {
     cursor: pointer;
-    transition-duration: 0.3s;
+    transition-duration: .3s;
 }
- .scrol img:hover {
-        transform: scale(1.1);
+
+.scrol img:hover {
+    transform: scale(1.1);
 }
+
 .btns {
     height: 120px;
     width: 24px;
     background-color: rgb(36, 36, 36);
+    border: none;
+    border-radius: 8px;
     color: white;
     font-size: 22px;
     font-weight: 100;
-    /* position: absolute; */
-    /* top: 40%; */
+    position: absolute;
+    top: 40%;
     cursor: pointer;
     transition-duration: 0.3s;
-    border-width: medium;
-    border-style: none;
-    border-color: currentcolor;
-    border-image: initial;
-    border-radius: 8px;
-    margin-top: 30px;
 }
+
 .btn-left:hover {
     transform: translatex(50%) scale(1.2);
 }
+
 .btn-right:hover {
     transform: translatex(-50%) scale(1.2);
 }
-.tx{
-    color: white;
-    margin-bottom: 30px;
+
+.btn-left {
+    left: 0;
+    padding-right: 20px;
+    padding: 5px;
 }
-.boxes{
+
+.btn-right {
+    right: 0;
+    margin-left: 17px;
+}
+
+.fix {
+    width: 80vw;
+    margin: auto;
+    color: white;
+    margin-top: 50px;
+    font-size: 27px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+.option {
+    margin-top: 30px;
+    font-size: 15px;
+    width: 100%;
     display: flex;
-    gap: 15px;
-    width: 90%;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    background: linear-gradient(to bottom right, #0d0d2b, #4b144f);
+    height: 310px;
+    width: 200px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+}
+
+.option1 :nth-child(1) {
+    font-size: 27px;
+    padding-bottom: 16px;
+    color: white;
+}
+
+.option1 :nth-child(2) {
+    font-size: 16px;
+    color: rgb(171, 170, 170);
+}
+
+.option2 :nth-child(1) {
+    font-size: 27px;
+    padding-bottom: 16px;
+    color: white;
+}
+
+.option2 :nth-child(2) {
+    font-size: 16px;
+    color: rgb(171, 170, 170);
+}
+
+.option3 :nth-child(1) {
+    font-size: 27px;
+    padding-bottom: 16px;
+    color: white;
+}
+
+.option3 :nth-child(2) {
+    font-size: 16px;
+    color: rgb(171, 170, 170);
+}
+
+.option4 :nth-child(1) {
+    font-size: 27px;
+    padding-bottom: 16px;
+    color: white;
+}
+
+.option4 :nth-child(2) {
+    font-size: 16px;
+    color: rgb(171, 170, 170);
+}
+
+.select {
+    width: 80vw;
+    margin: auto;
+    color: white;
+    margin-top: 50px;
+    font-size: 27px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+.grid {
+    font-size: 25px;
+    margin-top: 20px;
+    gap: 9px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gr {
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 95%;
     margin: auto;
 }
-.box{
-    width: 27%;
-    height: 300px;
-    background: linear-gradient(to right bottom, rgb(13, 13, 43), rgb(75, 20, 79));
-    padding: 15px;
-    border-radius: 20px;
-    font-size: 16px;
+
+.gr:hover {
+    background-color: rgb(58, 58, 58);
 }
-.big{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 15px;
+
+.help-box {
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.help-input {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.help-input input {
+    width: 600px;
+    height: 60px;
+}
+
+.link {
+    width: 80vw;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.link a {
+    color: rgb(176, 176, 176);
+    font-size: 18px;
+}
+
+.link-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 50px 0;
+}
+
+.li {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.li a {
+    font-size: 15px;
+}
+
+.en select {
+    font-size: 18px;
     color: white;
+    background-color: transparent;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    width: 130px;
 }
-.small{
-    color: gray;
+
+.en select:active {
+    border: 2px solid white;
+}
+
+.ne {
+    font-size: 14px;
+    color: rgb(176, 176, 176);
+}
+
+.los {
+    font-size: 14px;
+    color: rgb(176, 176, 176);
+    margin-top: 30px;
+    margin-bottom: 170px;
+}
+
+.los a {
+    color: blue;
+    font-size: 14px;
 }
